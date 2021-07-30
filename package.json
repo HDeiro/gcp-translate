@@ -1,0 +1,39 @@
+{
+  "name": "base-api",
+  "author": "Hugo Deiró",
+  "version": "0.0.0",
+  "homepage": "https://gitlab.com/base/base-api#readme",
+  "license": "ISC",
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "ts-node-dev src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "test": "jest --config ./jest.config.js",
+    "test:watch": "npm run test -- --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/base/base-api.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/base/base-api/issues"
+  },
+  "dependencies": {
+    "@google-cloud/translate": "6.2.6",
+    "dotenv": "10.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.24",
+    "@types/node": "16.4.8",
+    "@types/supertest": "2.0.11",
+    "jest": "27.0.6",
+    "really-need": "1.9.2",
+    "rimraf": "3.0.2",
+    "supertest": "6.1.4",
+    "ts-jest": "27.0.4",
+    "ts-node-dev": "1.1.8",
+    "tslint": "6.1.3",
+    "typescript": "4.3.5"
+  }
+}
